@@ -16,7 +16,7 @@ Before running the program, ensure you have Node.js installed on your machine. Y
    git clone https://github.com/chrismar-dev/AvailabilityTracker.git
 2. Navigate to the correct folder
     ```bash
-    cd availability-tracker
+    cd AvailabilityTracker
     ```
 
 ## How to Run
