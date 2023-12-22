@@ -60,6 +60,17 @@ Optimal Meeting Time: Thursday, January 15th 2022, 15:00:00 [UTC]Z
 - Time: Enter the availability time in "h:mm AM/PM - h:mm AM/PM" format (e.g., 9:00 AM - 3:40 PM).
 - Location (City or Region): Enter the city or region where the team member is located.
 
-# Extra Notes
-- The program uses the moment-timezone library to handle time zones.
-- If the program cannot determine the timezone from the provided city or region, it will prompt you to enter a more specific or well-known location.
+# Approach
+User Input
+The script prompts the user to input the following information:
+- Number of team members.
+- Availability for each team member in the format "start time - end time".
+- Meeting duration in minutes.
+- Validation
+   - To ensure correct input, the script uses regular expressions to validate the format of the time slots provided by the user.
+
+# Time Zone Considerations
+- The moment-timezone library is utilized to handle time zones. The script converts all time slots to UTC for consistency during calculations.
+
+# Optimal Meeting Time Calculation
+- The script counts the occurrences of each time slot and determines the one with the maximum occurrences, suggesting it as the optimal meeting time.
